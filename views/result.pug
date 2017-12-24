@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{pagetitle}
+  a(href='./index') Index
+  br
+  a(href='./form') Form
+  br
+  a(href='./about') About
+  br
+  br
+
+  .name=name
+  .email=email
+  .comments=comments
