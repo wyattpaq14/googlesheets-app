@@ -27,3 +27,27 @@ block content
         td=row[6]
         td=row[7]
         td=row[8]
+    
+    tr
+      form(action="/form", method="post", class="form-horizontal")
+        input(type='hidden' name='week' value='Week ' + rowcount)
+        td='Week ' + rowcount
+        td 
+          input(type='text' name='sunday' placeholder='Sunday')
+        td 
+          input(type='text' name='monday' placeholder='Monday')
+        td 
+          input(type='text' name='tuesday' placeholder='Tuesday')
+        td 
+          input(type='text' name='wednesday' placeholder='Wednesday')
+        td 
+          input(type='text' name='thursday' placeholder='Thursday')
+        td 
+          input(type='text' name='friday' placeholder='Friday')
+        td 
+          input(type='text' name='saturday' placeholder='Saturday')
+          
+        button(type='submit' class='btn col-sm-12' value="Submit")='Submit'
+
+
+  
