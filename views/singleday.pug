@@ -1,0 +1,13 @@
+extends layout
+
+
+block content
+  h1= pagetitle
+  p Welcome to #{pagetitle}
+  
+  form(action="/singleday", method="post", class="form-horizontal")
+    input(type='text' name='hours')
+    button(type='submit' class='btn col-sm-12' value="Submit")='Submit'
+
+
+  
